@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+  --accent:#111;
+  --primary:#111;
+  --highlight:#fff;
+  --muted:#6b7280;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Poppins',system-ui,Arial;
+  background: linear-gradient(180deg,#f7fafc 0%, #edf2f7 100%);
+  color:var(--accent);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  min-height:100vh;
+}
+
+/* centered canvas */
+.canvas-wrap{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px;
+}
+
+.card {
+  background:#ffffff;
+  border-radius:12px;
+  box-shadow:0 8px 30px rgba(2,6,23,0.08);
+  width:100%;
+  max-width:1000px;
+  padding:24px;
+}
+
+.header{
+  display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;
+}
+.brand{font-weight:700;color:var(--accent);font-size:20px}
+.nav a{color:var(--muted);margin-left:14px;text-decoration:none;font-size:14px}
+.nav a:hover{color:var(--accent)}
+
+.form {
+  max-width:420px;margin:0 auto;
+}
+.input{
+  width:100%;padding:12px 14px;border-radius:8px;border:1px solid #e6e9ef;margin-bottom:12px;font-size:14px;
+}
+.btn{
+  display:inline-block;padding:11px 16px;border-radius:8px;border:none;background:#111;color:#fff;font-weight:600; cursor:pointer;
+}
+.btn.secondary{background:#fff;color:#111;border:1px solid #e6e9ef}
+.small{font-size:13px;color:var(--muted)}
+.table{width:100%;border-collapse:collapse;margin-top:12px}
+.table th, .table td{padding:10px;border-bottom:1px solid #f1f5f9;text-align:left}
+.table th{color:#374151;font-weight:600;font-size:13px}
+.product-card{display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:8px;border:1px solid #f1f5f9;margin-bottom:10px}
+.product-info{max-width:70%}
+.center{ text-align:center; }
+.link { color:var(--accent); text-decoration:none; font-weight:600; }
+.receipt { max-width:420px;margin:10px auto; background:#fafafa;padding:14px;border-radius:8px;border:1px solid #eee }
+.footer-note{font-size:13px;color:var(--muted);margin-top:12px}
